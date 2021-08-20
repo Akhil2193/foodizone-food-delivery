@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://Akhil2193.github.io/foodizone-food-delivery", 
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.2",
@@ -21,8 +20,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
