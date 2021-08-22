@@ -48,7 +48,7 @@ function RestaurantOrder(props) {
                 <div className="order-restaurant-image-header">
                     <img className="order-restaurant-image1" src="/images/jakub-kapusnak-4f4YZfDMLeU-unsplash.jpg" alt="" />
                     <div className="order-restaurant-image-child">
-                        <img src="/images/stefan-johnson-xIFbDeGcy44-unsplash.jpg" />
+                        <img src="/images/stefan-johnson-xIFbDeGcy44-unsplash.jpg" alt="" className="order-restaurant-image2 marginbottom5"/>
                         <img src="/images/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg" alt="" className="order-restaurant-image2 margintop5" />
                     </div>
                 </div>
