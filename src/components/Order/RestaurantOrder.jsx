@@ -85,6 +85,7 @@ function RestaurantOrder(props) {
                                     <FoodItem
                                         key={item._id + index}
                                         id={item._id}
+                                        index = {props.index}
                                         name={item.name}
                                         price={item.price}
                                         veg={item.veg}

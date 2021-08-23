@@ -1,11 +1,15 @@
+import { colors } from "@material-ui/core";
 import React from "react";
 
 function FoodItem(props) {
     return (
         <div className="order-food">
             <div className="order-food-item">
-                <img className="order-food-item-image" src={`/images/dishes/${Math.floor(Math.random() * 5) + 1}.jpg`} alt="" />
-                <img src="/images/veg.png" alt="" className="order-food-item-veg" style={{ filter: `${props.veg ? "none" : "hue-rotate(247deg)"}` }} />
+                <img className="order-food-item-image" src={`/images/dishes/${(props.index % 5) + 1}.jpg`} alt="" />
+                <img src="/images/veg.png" alt="" className="order-food-item-veg" style={
+                    { filter: `${props.veg ? "none" : "hue-rotate(247deg)"}`,
+                        backgroundColor:"white"
+                     }} />
                 <div className="order-food-item-detail">
                     <p className="order-food-item-name">
                         {props.name}
