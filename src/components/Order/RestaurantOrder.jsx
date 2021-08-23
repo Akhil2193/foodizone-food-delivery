@@ -90,7 +90,7 @@ function RestaurantOrder(props) {
                                         veg={item.veg}
                                         addToCart={props.addToCart}
                                         removeFromCart={props.removeFromCart}
-                                        shoppingCart={props.shoppingCart}
+
                                     />) : "data is loading"}
                             </div>
                         )
