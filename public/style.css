@@ -428,6 +428,7 @@
     position: relative;
     top: 0.3rem;
     left: -1.3rem;
+    background-color: white;
 }
 
 .order-food-item-detail {
