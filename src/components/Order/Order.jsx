@@ -100,7 +100,7 @@ function Order() {
                 foodItems={restaurant.items}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
-
+                shoppingCart={shoppingCart}
             />
             </div>
             <Cart shoppingCart={shoppingCart}

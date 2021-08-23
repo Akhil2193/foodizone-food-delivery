@@ -1,6 +1,16 @@
-import React from "react";
+import React,{ useState,useEffect} from "react";
 
 function FoodItem(props) {
+    const [changeButton,setChangeButton] = useState(false);
+    const [quantity,setQuantity] = useState(0);
+    useEffect(()=>{
+        const find = props.shoppingCart.findIndex(element=>element.id===props.id)
+        if (find!==-1) {
+            setQuantity(props.shoppingCart[find].quantity);
+            setChangeButton(true);
+        }
+
+    },[props.shoppingCart])
     return (
         <div className="order-food">
             <div className="order-food-item">
@@ -27,7 +37,7 @@ function FoodItem(props) {
                 })
                 
             }}>
-                Add
+                {changeButton?`quantity = ${quantity}`:'Add'}
             </button>
             <button className="remove-from-cart" onClick={()=>{
                 props.removeFromCart(props.id)
