@@ -2,6 +2,12 @@ import { colors } from "@material-ui/core";
 import React from "react";
 
 function FoodItem(props) {
+    function addItem(){
+        alert('Item Added to Cart');
+    }
+    function removeItem(){
+        alert('Item removed from Cart');
+    }
     return (
         <div className="order-food">
             <div className="order-food-item">
@@ -29,13 +35,13 @@ function FoodItem(props) {
                     veg: props.veg,
                     quantity:1
                 })
-                
+                addItem();
             }}>
                 Add
             </button>
             <button className="remove-from-cart" onClick={()=>{
                 props.removeFromCart(props.id)
-                
+                removeItem();
             }}>Remove</button>
             </div>
         </div>
